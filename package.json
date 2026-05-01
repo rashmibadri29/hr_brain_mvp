@@ -1,0 +1,10 @@
+{
+  "name": "hr-operations-brain-mvp",
+  "private": true,
+  "scripts": {
+    "dev:web": "npm --prefix apps/web run dev",
+    "lint:web": "npm --prefix apps/web run lint",
+    "typecheck:web": "npm --prefix apps/web run typecheck"
+  }
+}
+
