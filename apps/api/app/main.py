@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.core.config import settings
-from app.routers import health, mvp
+from app.routers import health, mvp, sources
 
 app = FastAPI(
     title=settings.app_name,
@@ -20,4 +20,4 @@ app.add_middleware(
 
 app.include_router(health.router)
 app.include_router(mvp.router, prefix="/api/v1", tags=["mvp"])
-
+app.include_router(sources.router, prefix="/api/v1", tags=["sources"])

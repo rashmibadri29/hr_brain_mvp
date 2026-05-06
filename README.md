@@ -57,3 +57,24 @@ uvicorn app.main:app --reload --port 8000
 ```
 
 The web app expects the API at `http://localhost:8000` by default.
+
+## Phase 2 Ingestion
+
+The MVP now supports local upload-based HR knowledge ingestion. Raw files and parsed ingestion state are stored under `data/`, which is intentionally gitignored for local development.
+
+Supported MVP source files:
+
+- `.txt`
+- `.md`
+- `.csv`
+- `.json`
+
+Ingestion endpoints:
+
+- `GET /api/v1/sources/summary`
+- `POST /api/v1/sources`
+- `GET /api/v1/sources`
+- `GET /api/v1/sources/{source_id}`
+- `GET /api/v1/sources/{source_id}/chunks`
+
+The web app includes an ingestion console for uploading a source, viewing processing status, and inspecting parsed chunks with domain, risk, and sensitivity labels.

@@ -1,0 +1,9 @@
+New Hire Onboarding Checklist
+
+Collect employee name, start date, manager, role, employment type, and work location.
+
+Before the first day, HR confirms signed offer paperwork, payroll profile, benefits eligibility, and tax forms. IT prepares laptop, email, identity provider access, and required SaaS accounts.
+
+On the first day, the manager hosts role orientation, confirms team introductions, and reviews the 30 day onboarding plan.
+
+Escalate to HR operations if employment type, work location, or manager assignment is missing.

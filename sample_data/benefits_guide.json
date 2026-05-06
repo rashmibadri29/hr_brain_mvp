@@ -1,0 +1,14 @@
+{
+  "title": "Benefits Guide",
+  "eligibility": {
+    "full_time": "Eligible on the first day of the month after start date",
+    "part_time": "Eligibility depends on scheduled weekly hours",
+    "contractor": "Not eligible for company health benefits"
+  },
+  "enrollment": {
+    "window_days": 30,
+    "qualifying_life_events": ["marriage", "birth", "loss of coverage"]
+  },
+  "plans": ["medical", "dental", "vision", "401k"],
+  "escalation": "Benefits exceptions and medical accommodation questions must go to HR benefits."
+}

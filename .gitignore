@@ -14,3 +14,6 @@ build/
 coverage/
 
 *.tsbuildinfo
+/data/
+data/
+apps/api/data/

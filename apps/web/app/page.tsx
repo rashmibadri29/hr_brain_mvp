@@ -1,3 +1,5 @@
+import { IngestionConsole } from "./components/IngestionConsole";
+
 const workflows = [
   {
     name: "New Hire Onboarding",
@@ -35,7 +37,7 @@ export default function Home() {
     <main className="shell">
       <section className="hero">
         <div>
-          <p className="eyebrow">Phase 1 foundation</p>
+          <p className="eyebrow">Phase 2 ingestion</p>
           <h1>HR Operations Brain</h1>
           <p className="lede">
             Convert scattered HR policies, tickets, and onboarding knowledge into approved workflows and
@@ -44,10 +46,12 @@ export default function Home() {
         </div>
         <div className="statusPanel" aria-label="MVP status">
           <span>Current milestone</span>
-          <strong>System foundation</strong>
-          <p>Frontend shell, API skeleton, typed schemas, safety policy, and database schema are ready.</p>
+          <strong>Knowledge ingestion</strong>
+          <p>Upload HR sources, parse content, create chunks, and inspect source-grounded labels.</p>
         </div>
       </section>
+
+      <IngestionConsole />
 
       <section className="grid two">
         <div className="panel">

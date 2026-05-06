@@ -10,17 +10,34 @@ from app.models.hr_brain import (
     SourceCitation,
     WorkflowStep,
 )
+from app.models.ingestion import (
+    DocumentChunk,
+    HRDomain,
+    IngestionSummary,
+    ProcessingStatus,
+    SensitivityLabel,
+    SourceDocument,
+    SourceDocumentDetail,
+    SourceType,
+)
 
 __all__ = [
     "ApprovalRule",
+    "DocumentChunk",
     "EscalationRule",
+    "HRDomain",
     "HRWorkflow",
+    "IngestionSummary",
     "MvpScope",
     "PolicyRule",
+    "ProcessingStatus",
     "RequiredInput",
     "SafetyPolicy",
+    "SensitivityLabel",
     "SkillFile",
     "SourceCitation",
+    "SourceDocument",
+    "SourceDocumentDetail",
+    "SourceType",
     "WorkflowStep",
 ]
-

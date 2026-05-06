@@ -1,0 +1,5 @@
+question,answer,owner
+My paycheck amount is incorrect,Collect pay period issue type and employee summary then route to payroll,payroll_ops
+My direct deposit did not arrive,Confirm pay date bank name and whether account details changed then escalate to payroll,payroll_ops
+I see an unexpected deduction,Collect deduction label pay period and screenshot if available then route to payroll,payroll_ops
+Can you change my salary,Do not make compensation changes escalate compensation disputes to HR operations,hr_ops
