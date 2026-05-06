@@ -414,6 +414,125 @@ h3 {
   -webkit-line-clamp: 6;
 }
 
+
+
+.actionRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.actionRow button {
+  min-height: 40px;
+  border: 0;
+  border-radius: 6px;
+  background: var(--accent);
+  color: #ffffff;
+  padding: 8px 14px;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.actionRow button:first-child {
+  border: 1px solid #b7c4d5;
+  background: #ffffff;
+  color: var(--accent-strong);
+}
+
+.actionRow button:disabled {
+  cursor: wait;
+  opacity: 0.68;
+}
+
+.actionRow span {
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+.extractionGrid {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.34fr) minmax(0, 0.66fr);
+  gap: 18px;
+  align-items: start;
+}
+
+.workflowPreview {
+  display: grid;
+  gap: 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 16px;
+  background: #ffffff;
+}
+
+.workflowPreview > header {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.workflowPreview > header p {
+  margin-bottom: 0;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.previewSection {
+  display: grid;
+  gap: 8px;
+}
+
+.previewSection h4,
+.citationList h4 {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.previewSection ul {
+  display: grid;
+  gap: 7px;
+  margin: 0;
+  padding-left: 18px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.citationList {
+  display: grid;
+  gap: 10px;
+  border-top: 1px solid var(--line);
+  padding-top: 14px;
+}
+
+.citationList div {
+  display: grid;
+  gap: 4px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 12px;
+  background: #fbfcfe;
+}
+
+.citationList span {
+  color: var(--accent-strong);
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.citationList p {
+  display: -webkit-box;
+  margin-bottom: 0;
+  overflow: hidden;
+  color: var(--muted);
+  line-height: 1.5;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+}
+
 @media (max-width: 860px) {
   .shell {
     width: min(100% - 28px, 680px);
@@ -423,7 +542,8 @@ h3 {
   .hero,
   .grid.two,
   .workflow,
-  .ingestionGrid {
+  .ingestionGrid,
+  .extractionGrid {
     grid-template-columns: 1fr;
   }
 
@@ -434,7 +554,8 @@ h3 {
 
   .sectionHeader,
   .sourceMeta,
-  .chunkCard header {
+  .chunkCard header,
+  .workflowPreview > header {
     flex-direction: column;
   }
 

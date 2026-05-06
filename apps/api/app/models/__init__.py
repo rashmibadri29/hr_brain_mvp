@@ -41,3 +41,6 @@ __all__ = [
     "SourceType",
     "WorkflowStep",
 ]
+
+from app.models.embeddings import ChunkEmbedding, EmbeddingRebuildResult, EmbeddingSummary, RetrievedChunk, RetrievalSearchRequest, RetrievalSearchResponse
+from app.models.extraction import ExtractionRun, ExtractionRunDetail, ExtractionSummary, ExtractedWorkflow

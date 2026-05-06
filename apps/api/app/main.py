@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.core.config import settings
-from app.routers import health, mvp, sources
+from app.routers import embeddings, extractions, health, mvp, retrieval, sources
 
 app = FastAPI(
     title=settings.app_name,
@@ -21,3 +21,6 @@ app.add_middleware(
 app.include_router(health.router)
 app.include_router(mvp.router, prefix="/api/v1", tags=["mvp"])
 app.include_router(sources.router, prefix="/api/v1", tags=["sources"])
+app.include_router(embeddings.router, prefix="/api/v1", tags=["embeddings"])
+app.include_router(retrieval.router, prefix="/api/v1", tags=["retrieval"])
+app.include_router(extractions.router, prefix="/api/v1", tags=["extractions"])

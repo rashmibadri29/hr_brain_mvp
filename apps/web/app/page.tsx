@@ -1,3 +1,4 @@
+import { ExtractionConsole } from "./components/ExtractionConsole";
 import { IngestionConsole } from "./components/IngestionConsole";
 
 const workflows = [
@@ -37,7 +38,7 @@ export default function Home() {
     <main className="shell">
       <section className="hero">
         <div>
-          <p className="eyebrow">Phase 2 ingestion</p>
+          <p className="eyebrow">Phase 3 extraction</p>
           <h1>HR Operations Brain</h1>
           <p className="lede">
             Convert scattered HR policies, tickets, and onboarding knowledge into approved workflows and
@@ -46,12 +47,14 @@ export default function Home() {
         </div>
         <div className="statusPanel" aria-label="MVP status">
           <span>Current milestone</span>
-          <strong>Knowledge ingestion</strong>
-          <p>Upload HR sources, parse content, create chunks, and inspect source-grounded labels.</p>
+          <strong>Classification and extraction</strong>
+          <p>Embed source chunks, retrieve semantically relevant knowledge, and draft structured HR workflows.</p>
         </div>
       </section>
 
       <IngestionConsole />
+
+      <ExtractionConsole />
 
       <section className="grid two">
         <div className="panel">

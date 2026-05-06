@@ -78,3 +78,19 @@ Ingestion endpoints:
 - `GET /api/v1/sources/{source_id}/chunks`
 
 The web app includes an ingestion console for uploading a source, viewing processing status, and inspecting parsed chunks with domain, risk, and sensitivity labels.
+
+## Phase 3 Extraction
+
+The MVP now supports local deterministic embeddings, semantic retrieval, and draft HR workflow extraction. Embeddings and extracted workflows are stored under `apps/api/data/` for local development.
+
+Phase 3 endpoints:
+
+- `GET /api/v1/embeddings/summary`
+- `POST /api/v1/embeddings/rebuild`
+- `POST /api/v1/retrieval/search`
+- `GET /api/v1/extractions/summary`
+- `POST /api/v1/extractions/run`
+- `GET /api/v1/extractions/runs`
+- `GET /api/v1/extractions/runs/{run_id}`
+- `GET /api/v1/extractions/workflows`
+- `GET /api/v1/extractions/workflows/{workflow_id}`

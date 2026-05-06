@@ -13,6 +13,8 @@ class Settings(BaseSettings):
     data_dir: str = "data"
     upload_dir: str = "uploads"
     ingestion_store_filename: str = "ingestion_store.json"
+    embedding_store_filename: str = "embedding_store.json"
+    extraction_store_filename: str = "extraction_store.json"
 
     model_config = SettingsConfigDict(env_file=".env", env_prefix="HR_BRAIN_")
 
@@ -27,6 +29,14 @@ class Settings(BaseSettings):
     @property
     def ingestion_store_path(self) -> Path:
         return self.data_dir_path / self.ingestion_store_filename
+
+    @property
+    def embedding_store_path(self) -> Path:
+        return self.data_dir_path / self.embedding_store_filename
+
+    @property
+    def extraction_store_path(self) -> Path:
+        return self.data_dir_path / self.extraction_store_filename
 
 
 settings = Settings()
